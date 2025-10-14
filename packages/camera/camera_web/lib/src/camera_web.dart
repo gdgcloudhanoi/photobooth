@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:html' as html;
-import 'dart:ui' as ui;
+// ignore: depend_on_referenced_packages
+import 'dart:ui_web' as ui_web;
 
 import 'package:camera_platform_interface/camera_platform_interface.dart';
 import 'package:camera_web/camera_web.dart';
@@ -133,8 +134,7 @@ class Camera {
     divElement = html.DivElement()
       ..style.setProperty('object-fit', 'cover')
       ..append(videoElement);
-    // ignore: avoid_dynamic_calls
-    ui.platformViewRegistry.registerViewFactory(
+    ui_web.platformViewRegistry.registerViewFactory(
       _getViewType(textureId),
       (_) => divElement,
     );

@@ -108,7 +108,10 @@ coverage/
 packages/**/pubspec.lock
 
 # Web related
-lib/generated_plugin_registrant.dart
+
+# Generated files
+lib/gen/
+lib/l10n/arb/*.dart
 
 # Firebase related
 .firebase/

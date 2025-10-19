@@ -1,6 +1,6 @@
 {
     "@@locale": "en",
-    "landingPageHeading": "Welcome to the I\u2215O Photo Booth",
+    "landingPageHeading": "Welcome to the DevFest Cloud 2025 Photo Booth",
     "@landingPageHeading": {
         "description": "Heading shown on the landing page."
     },

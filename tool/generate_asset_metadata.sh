@@ -25,7 +25,7 @@ echo "import 'package:photobooth_ui/photobooth_ui.dart';"
 echo ""
 echo "class Assets {"
 
-characters=("android.png" "dash.png" "dino.png" "sparky.png")
+characters=("GDG.png" "dash.png" "dino.png" "sparky.png")
 
 for character in "${characters[@]}"
 do

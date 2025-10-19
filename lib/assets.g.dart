@@ -6,7 +6,7 @@ import 'package:photobooth_ui/photobooth_ui.dart';
 class Assets {
   static const android = Asset(
     name: 'android',
-    path: 'assets/images/android.png',
+    path: 'assets/images/GDG.png',
     size: Size(450, 658),
   );
   static const dash = Asset(

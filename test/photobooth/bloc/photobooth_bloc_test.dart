@@ -55,11 +55,11 @@ void main() {
         'when character did not exist (android)',
         build: () => PhotoboothBloc(uuid),
         act: (bloc) => bloc.add(
-          PhotoCharacterToggled(character: Assets.android),
+          PhotoCharacterToggled(character: Assets.GDG),
         ),
         expect: () => [
           PhotoboothState(
-            characters: const [PhotoAsset(id: '0', asset: Assets.android)],
+            characters: const [PhotoAsset(id: '0', asset: Assets.GDG)],
             selectedAssetId: '0',
           )
         ],
@@ -98,10 +98,10 @@ void main() {
         'when character did exist (android)',
         build: () => PhotoboothBloc(uuid),
         seed: () => PhotoboothState(
-          characters: const [PhotoAsset(id: '0', asset: Assets.android)],
+          characters: const [PhotoAsset(id: '0', asset: Assets.GDG)],
         ),
         act: (bloc) => bloc.add(
-          PhotoCharacterToggled(character: Assets.android),
+          PhotoCharacterToggled(character: Assets.GDG),
         ),
         expect: () => [PhotoboothState()],
       );

@@ -70,7 +70,7 @@ class PhotoboothPreview extends StatelessWidget {
           );
           context
               .read<PhotoboothBloc>()
-              .add(const PhotoCharacterToggled(character: Assets.android));
+              .add(const PhotoCharacterToggled(character: Assets.GDG));
         },
       ),
       CharacterIconButton(

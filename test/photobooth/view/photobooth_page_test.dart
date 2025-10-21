@@ -383,7 +383,7 @@ void main() {
         (tester) async {
       when(() => photoboothBloc.state).thenReturn(
         PhotoboothState(
-          characters: const [PhotoAsset(id: '0', asset: Assets.android)],
+          characters: const [PhotoAsset(id: '0', asset: Assets.GDG)],
         ),
       );
       const preview = SizedBox();
@@ -408,7 +408,7 @@ void main() {
     testWidgets('adds PhotoCharacterDragged when dragged', (tester) async {
       when(() => photoboothBloc.state).thenReturn(
         PhotoboothState(
-          characters: const [PhotoAsset(id: '0', asset: Assets.android)],
+          characters: const [PhotoAsset(id: '0', asset: Assets.GDG)],
         ),
       );
       const preview = SizedBox();
@@ -572,7 +572,7 @@ void main() {
       when(() => photoboothBloc.state).thenReturn(
         PhotoboothState(
           characters: const [
-            PhotoAsset(id: '0', asset: Assets.android),
+            PhotoAsset(id: '0', asset: Assets.GDG),
             PhotoAsset(id: '1', asset: Assets.dash),
             PhotoAsset(id: '2', asset: Assets.sparky),
             PhotoAsset(id: '3', asset: Assets.dino),
@@ -701,7 +701,7 @@ void main() {
       expect(tester.takeException(), isNull);
       verify(
         () => photoboothBloc.add(
-          PhotoCharacterToggled(character: Assets.android),
+          PhotoCharacterToggled(character: Assets.GDG),
         ),
       ).called(1);
     });
@@ -772,7 +772,7 @@ void main() {
       tester.setDisplaySize(const Size(PhotoboothBreakpoints.small, 1000));
       when(() => photoboothBloc.state).thenReturn(
         PhotoboothState(
-          characters: const [PhotoAsset(id: '0', asset: Assets.android)],
+          characters: const [PhotoAsset(id: '0', asset: Assets.GDG)],
         ),
       );
       const preview = SizedBox();

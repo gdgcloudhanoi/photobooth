@@ -36,7 +36,7 @@ void main() {
     testWidgets('renders Android character assert', (tester) async {
       when(() => photoboothBloc.state).thenReturn(
         PhotoboothState(
-          characters: const [PhotoAsset(id: '0', asset: Assets.android)],
+          characters: const [PhotoAsset(id: '0', asset: Assets.GDG)],
           image: image,
         ),
       );
